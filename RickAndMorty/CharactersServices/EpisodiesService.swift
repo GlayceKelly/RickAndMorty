@@ -1,29 +1,29 @@
 //
-//  CharacterService.swift
+//  EpisodiesService.swift
 //  RickAndMorty
 //
-//  Created by Glayce Kelly on 29/09/20.
+//  Created by Glayce Kelly on 26/10/20.
 //  Copyright © 2020 Glayce Kelly. All rights reserved.
 //
 
 import Foundation
 import Alamofire
 
-protocol CharacterServiceProtocol: class {
-    func fetchCharacters(page: String?, completion: @escaping(AFResult<Character>) -> Void)
+protocol EpisodiesServiceProtocol: class {
+    func fetchEpisodies(page: String?, completion: @escaping(AFResult<EpisodiesResult>) -> Void)
 }
 
-class CharacterService: CharacterServiceProtocol {
+class EpisodiesService: EpisodiesServiceProtocol {
     
     private let basePath = "https://rickandmortyapi.com/api/"
     
-    func fetchCharacters(page: String?, completion: @escaping (AFResult<Character>) -> Void) {
+    func fetchEpisodies(page: String?, completion: @escaping (AFResult<EpisodiesResult>) -> Void) {
         var url: String = ""
         
         if let page: String = page {
-            url = "\(basePath)character/?page=\(page)"
+            url = "\(basePath)episode/?page=\(page)"
         } else {
-            url = "\(basePath)character/"
+            url = "\(basePath)episode/"
         }
         
         AF.request(url).responseJSON { (response) in
@@ -32,8 +32,8 @@ class CharacterService: CharacterServiceProtocol {
                 do {
                     guard let responseData = response.data else { return }
                     
-                    let characters: Character = try JSONDecoder().decode(Character.self, from: responseData)
-                    completion(.success(characters))
+                    let episodies: EpisodiesResult = try JSONDecoder().decode(EpisodiesResult.self, from: responseData)
+                    completion(.success(episodies))
                     print("Response URL: \(url) \n \(data)")
                 } catch {
                     print(error.localizedDescription)

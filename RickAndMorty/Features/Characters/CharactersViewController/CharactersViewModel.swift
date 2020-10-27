@@ -25,11 +25,16 @@ class CharactersViewModel {
 
     private var generalService: GeneralServiceProtocol
     private var characterService: CharacterServiceProtocol
+    
+    //*************************************************
+    // MARK: - Public Properties
+    //*************************************************
+    
     var characterURL: String = ""
     var results: [Results] = []
     var character: Character?
     var loadingCharacters = false
-    var currentPage: Int = 0
+    var currentPage: Int = 1
     
     //*************************************************
     // MARK: - Inits

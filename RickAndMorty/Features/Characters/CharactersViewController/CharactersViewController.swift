@@ -42,7 +42,7 @@ class CharactersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        self.charactersTableView.register(CharactersTableViewCell.self, forCellReuseIdentifier: "cell")
+        navigationController?.modalPresentationStyle = .fullScreen
 
         viewModel.loadURLs()
         charactersTableView.delegate = self
@@ -56,7 +56,6 @@ class CharactersViewController: UIViewController {
 
     @IBAction func fetchCharacters(_ sender: Any) {
         viewModel.loadCharacters(tableView: charactersTableView)
-
     }
 }
 
@@ -75,6 +74,10 @@ extension CharactersViewController {
 extension CharactersViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.results.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 220
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

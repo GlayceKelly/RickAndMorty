@@ -20,7 +20,6 @@ class CharactersTableViewCell: UITableViewCell {
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var episodiesButton: UIButton!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -37,6 +36,17 @@ class CharactersTableViewCell: UITableViewCell {
     //*************************************************
     
     @IBAction func fetchEpiodies(_ sender: UIButton) {
+//        let serviceEpisodies: EpisodiesService = EpisodiesService()
+//        serviceEpisodies.fetchEpisodies(page: "1") { (result) in
+//            switch result {
+//            case .success(let episodieResul):
+//                for result in episodieResul.results {
+//                    print("Sucesso!!! \(result.name)")
+//                }
+//            case .failure(let error):
+//                print("Erro!!! \(error.localizedDescription)")
+//            }
+//        }
     }
     
 }

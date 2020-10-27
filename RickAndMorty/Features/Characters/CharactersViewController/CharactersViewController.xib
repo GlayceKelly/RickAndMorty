@@ -40,7 +40,7 @@
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AJw-mf-GSM">
                     <rect key="frame" x="16" y="149" width="382" height="571"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -53,7 +53,7 @@
                 <constraint firstItem="XNQ-Tb-Y3b" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="l3m-yJ-dMy"/>
                 <constraint firstItem="Dad-az-Nfu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vTN-0b-Qba"/>
                 <constraint firstItem="AJw-mf-GSM" firstAttribute="top" secondItem="Dad-az-Nfu" secondAttribute="bottom" constant="30" id="xXB-Ct-AJH"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AJw-mf-GSM" secondAttribute="trailing" constant="16" id="yOm-eB-OSI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AJw-mf-GSM" secondAttribute="trailing" constant="16" id="ziI-fY-uHv"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="110.86956521739131"/>
