@@ -42,7 +42,7 @@ class CharactersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "PRINCIPAL"
+        title = "All Characters"
 
         viewModel.loadURLs()
         charactersTableView.delegate = self
