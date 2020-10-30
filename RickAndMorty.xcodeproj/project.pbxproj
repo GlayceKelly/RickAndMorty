@@ -24,10 +24,16 @@
 		EB1383382522F0E500A9AF16 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1383372522F0E500A9AF16 /* Results.swift */; };
 		EB13833A2522F0FA00A9AF16 /* Origin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1383392522F0FA00A9AF16 /* Origin.swift */; };
 		EB13833C2522F10B00A9AF16 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB13833B2522F10B00A9AF16 /* Location.swift */; };
+		EB1915F0254BBD320083789B /* CharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1915EF254BBD320083789B /* CharacterDetailViewModel.swift */; };
 		EB99AB962547A5210071B7FA /* CharactersTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB99AB952547A5210071B7FA /* CharactersTableViewCellViewModel.swift */; };
 		EB99AB992547A6210071B7FA /* EpisodiesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB99AB982547A6210071B7FA /* EpisodiesService.swift */; };
 		EB99AB9C2547A8F60071B7FA /* Episodies.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB99AB9B2547A8F60071B7FA /* Episodies.swift */; };
 		EB99ABA12547AE610071B7FA /* EpisodiesResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB99ABA02547AE610071B7FA /* EpisodiesResult.swift */; };
+		EB99ABB02547CC690071B7FA /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB99ABAE2547CC690071B7FA /* CharacterDetailViewController.swift */; };
+		EB99ABB12547CC690071B7FA /* CharacterDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB99ABAF2547CC690071B7FA /* CharacterDetailViewController.xib */; };
+		EB99AC3425492EE20071B7FA /* EpisodiesCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB99AC3225492EE20071B7FA /* EpisodiesCharacterViewController.swift */; };
+		EB99AC3525492EE20071B7FA /* EpisodiesCharacterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB99AC3325492EE20071B7FA /* EpisodiesCharacterViewController.xib */; };
+		EB99AC3825492F060071B7FA /* EpisodiesCharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB99AC3725492F060071B7FA /* EpisodiesCharacterViewModel.swift */; };
 		F61341FD2815F75C60C6D5CD /* Pods_RickAndMorty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66073F4279B7E20AEE8E11B0 /* Pods_RickAndMorty.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,10 +60,16 @@
 		EB1383372522F0E500A9AF16 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		EB1383392522F0FA00A9AF16 /* Origin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Origin.swift; sourceTree = "<group>"; };
 		EB13833B2522F10B00A9AF16 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		EB1915EF254BBD320083789B /* CharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModel.swift; sourceTree = "<group>"; };
 		EB99AB952547A5210071B7FA /* CharactersTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		EB99AB982547A6210071B7FA /* EpisodiesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodiesService.swift; sourceTree = "<group>"; };
 		EB99AB9B2547A8F60071B7FA /* Episodies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episodies.swift; sourceTree = "<group>"; };
 		EB99ABA02547AE610071B7FA /* EpisodiesResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodiesResult.swift; sourceTree = "<group>"; };
+		EB99ABAE2547CC690071B7FA /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		EB99ABAF2547CC690071B7FA /* CharacterDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterDetailViewController.xib; sourceTree = "<group>"; };
+		EB99AC3225492EE20071B7FA /* EpisodiesCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodiesCharacterViewController.swift; sourceTree = "<group>"; };
+		EB99AC3325492EE20071B7FA /* EpisodiesCharacterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodiesCharacterViewController.xib; sourceTree = "<group>"; };
+		EB99AC3725492F060071B7FA /* EpisodiesCharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodiesCharacterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				EB13831D251EF3CE00A9AF16 /* Characters */,
+				EB99AC3025492E870071B7FA /* Episodies */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -169,6 +182,9 @@
 		EB1383232522E0FD00A9AF16 /* CharactersDetailViewController */ = {
 			isa = PBXGroup;
 			children = (
+				EB99ABAE2547CC690071B7FA /* CharacterDetailViewController.swift */,
+				EB99ABAF2547CC690071B7FA /* CharacterDetailViewController.xib */,
+				EB1915EF254BBD320083789B /* CharacterDetailViewModel.swift */,
 			);
 			path = CharactersDetailViewController;
 			sourceTree = "<group>";
@@ -206,6 +222,32 @@
 			children = (
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		EB99AC3025492E870071B7FA /* Episodies */ = {
+			isa = PBXGroup;
+			children = (
+				EB99AC3125492E9C0071B7FA /* EpisodiesCharacterViewController */,
+			);
+			path = Episodies;
+			sourceTree = "<group>";
+		};
+		EB99AC3125492E9C0071B7FA /* EpisodiesCharacterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EB99AC3A25492F480071B7FA /* EpisodiesCharacterCell */,
+				EB99AC3225492EE20071B7FA /* EpisodiesCharacterViewController.swift */,
+				EB99AC3725492F060071B7FA /* EpisodiesCharacterViewModel.swift */,
+				EB99AC3325492EE20071B7FA /* EpisodiesCharacterViewController.xib */,
+			);
+			path = EpisodiesCharacterViewController;
+			sourceTree = "<group>";
+		};
+		EB99AC3A25492F480071B7FA /* EpisodiesCharacterCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EpisodiesCharacterCell;
 			sourceTree = "<group>";
 		};
 		F271DE665294335AD68EBA82 /* Frameworks */ = {
@@ -279,6 +321,8 @@
 				EB1383282522E13300A9AF16 /* CharactersViewController.xib in Resources */,
 				EB13830F251EED4100A9AF16 /* LaunchScreen.storyboard in Resources */,
 				EB13830C251EED4100A9AF16 /* Assets.xcassets in Resources */,
+				EB99ABB12547CC690071B7FA /* CharacterDetailViewController.xib in Resources */,
+				EB99AC3525492EE20071B7FA /* EpisodiesCharacterViewController.xib in Resources */,
 				EB13832C2522E4CB00A9AF16 /* CharactersTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,15 +383,19 @@
 				EB99AB962547A5210071B7FA /* CharactersTableViewCellViewModel.swift in Sources */,
 				EB13831B251EF12800A9AF16 /* RickAndMortyURLs.swift in Sources */,
 				EB13833C2522F10B00A9AF16 /* Location.swift in Sources */,
+				EB99ABB02547CC690071B7FA /* CharacterDetailViewController.swift in Sources */,
 				EB99ABA12547AE610071B7FA /* EpisodiesResult.swift in Sources */,
 				EB13833A2522F0FA00A9AF16 /* Origin.swift in Sources */,
 				EB1383382522F0E500A9AF16 /* Results.swift in Sources */,
 				EB99AB992547A6210071B7FA /* EpisodiesService.swift in Sources */,
+				EB99AC3425492EE20071B7FA /* EpisodiesCharacterViewController.swift in Sources */,
 				EB1383312522E59100A9AF16 /* CharacterService.swift in Sources */,
+				EB99AC3825492F060071B7FA /* EpisodiesCharacterViewModel.swift in Sources */,
 				EB13832B2522E4CB00A9AF16 /* CharactersTableViewCell.swift in Sources */,
 				EB1383332522EFAF00A9AF16 /* GeneralService.swift in Sources */,
 				EB138305251EED3C00A9AF16 /* SceneDelegate.swift in Sources */,
 				EB1383362522F0D000A9AF16 /* Info.swift in Sources */,
+				EB1915F0254BBD320083789B /* CharacterDetailViewModel.swift in Sources */,
 				EB99AB9C2547A8F60071B7FA /* Episodies.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

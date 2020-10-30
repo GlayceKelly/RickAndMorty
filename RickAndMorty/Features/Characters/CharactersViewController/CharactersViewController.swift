@@ -36,13 +36,13 @@ class CharactersViewController: UIViewController {
     }
     
     //*************************************************
-    // MARK: - Life Cycle
+    // MARK: - LifeCycle
     //*************************************************
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationController?.modalPresentationStyle = .fullScreen
+        title = "PRINCIPAL"
 
         viewModel.loadURLs()
         charactersTableView.delegate = self
@@ -78,6 +78,14 @@ extension CharactersViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 220
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let result: Results = viewModel.results[indexPath.row]
+        let viewModel: CharacterDetailViewModel = CharacterDetailViewModel(results: result)
+        let viewController: UIViewController = CharacterDetailViewController(viewModel: viewModel)
+        navigationController?.modalPresentationStyle = .fullScreen
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
