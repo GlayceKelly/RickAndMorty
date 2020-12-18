@@ -42,8 +42,6 @@ class CharactersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "All Characters"
-
         viewModel.loadURLs()
         charactersTableView.delegate = self
         charactersTableView.dataSource = self

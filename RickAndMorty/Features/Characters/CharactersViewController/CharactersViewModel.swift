@@ -40,7 +40,7 @@ class CharactersViewModel {
     // MARK: - Inits
     //*************************************************
     
-    init(generalService: GeneralServiceProtocol, characterService: CharacterServiceProtocol) {
+    init(generalService: GeneralServiceProtocol = GeneralService(), characterService: CharacterServiceProtocol = CharacterService()) {
         self.generalService = generalService
         self.characterService = characterService
     }

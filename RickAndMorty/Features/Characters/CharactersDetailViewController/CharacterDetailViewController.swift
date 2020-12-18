@@ -54,11 +54,9 @@ class CharacterDetailViewController: UIViewController {
     // MARK: - Actions
     //*************************************************
     
-    
     @IBAction func episodiesAction(_ sender: UIButton) {
         viewModel?.navigateToEpisodiesScreen(viewController: self)
     }
-    
 }
 
 //*************************************************

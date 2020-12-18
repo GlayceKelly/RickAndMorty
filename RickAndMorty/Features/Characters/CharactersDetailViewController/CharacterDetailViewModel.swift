@@ -49,7 +49,7 @@ class CharacterDetailViewModel {
     // MARK: - Inits
     //*************************************************
     
-    init(results: Results) {
+    init(results: Results?) {
         self.results = results
     }
 }
